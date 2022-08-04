@@ -1,0 +1,9 @@
+#digitalclock
+{
+    font-size: 200px;
+    width: 900px;
+    margin: 220px;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 100px;
+}

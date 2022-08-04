@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./passvalidation.css">
+    <title>password validation form</title>
+</head>
+<body>
+    <h3>Password Validation</h3>
+    <p>Enter your details</p>
+<div class="container">
+    <form name="m__form1" action="#m__" target="_blank">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+        <br><br>
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br><br>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="mail">email</label>
+        <input type="text" id="mail" name="mail" required>
+        <br><br>
+        <label for="psw">Password</label>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=" Password Must contain at least one number and one uppercase and lowercase letter, and  contain at least 10 or more characters" required>
+        <br>
+        <br>
+        <label for="confpassword">Confirm Password</label>
+        <input type="text" id="confpassword" name="confpassword" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+  <p id="small" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b> value</p>
+  <p id="length" class="invalid">Minimum <b>10 characters</b></p>
+</div>
+<script src="./passvaidation.js">
+</script>
+
+</body>
+</html>
